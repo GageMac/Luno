@@ -9,10 +9,13 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "api:gen": "nswag openapi2tsclient /input:https://localhost:7096/swagger/v1/swagger.json /output:src/api/api.ts /template:Axios /namespace:Luno.Client /typeScriptVersion:5.0"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "axios": "^1.6.7",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.1",
