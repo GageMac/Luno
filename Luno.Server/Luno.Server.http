@@ -1,0 +1,6 @@
+@Luno.Server_HostAddress = http://localhost:5233
+
+GET {{Luno.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
