@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Luno.Server.Models;
 
 namespace Luno.Server.Data;
 
@@ -10,5 +11,5 @@ public class ApplicationDbContext : DbContext
     }
 
     // Add your DbSet properties here for your entities
-    // Example: public DbSet<YourEntity> YourEntities { get; set; }
+    public DbSet<User> Users { get; set; }
 } 

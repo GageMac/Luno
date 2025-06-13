@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// No need to import HomePage here anymore
+// Router is working perfectly now!
 </script>
 
 <template>

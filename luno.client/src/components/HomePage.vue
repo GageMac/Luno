@@ -19,12 +19,15 @@
           <li>Customize the layout and navigation</li>
         </ul>
       </section>
+
+      <!-- Add the DatabaseViewer component -->
+      <DatabaseViewer />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
-// Add composition API logic here as you build features
+import DatabaseViewer from "./DatabaseViewer.vue";
 </script>
 
 <style scoped>
@@ -61,7 +64,7 @@
 .homepage__main {
   flex: 1;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 2rem auto;
   background: #fff;
   border-radius: 12px;
@@ -70,5 +73,6 @@
 }
 .homepage__section {
   text-align: center;
+  margin-bottom: 2rem;
 }
 </style>
