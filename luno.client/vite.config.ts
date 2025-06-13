@@ -48,9 +48,7 @@ export default defineConfig({
     },
   },
   server: {
-    proxy: {
-      // Removed /weatherforecast proxy as the endpoint is deleted
-    },
+    proxy: {},
     port: parseInt(env.DEV_SERVER_PORT || "61675"),
     https: {
       key: fs.readFileSync(keyFilePath),

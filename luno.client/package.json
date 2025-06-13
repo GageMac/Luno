@@ -13,7 +13,9 @@
     "api:gen": "nswag openapi2tsclient /input:https://localhost:7096/swagger/v1/swagger.json /output:src/api/api.ts /template:Axios /namespace:Luno.Client /typeScriptVersion:5.0"
   },
   "dependencies": {
+    "@vueuse/core": "^13.3.0",
     "axios": "^1.6.7",
+    "pinia": "^3.0.3",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
   },
